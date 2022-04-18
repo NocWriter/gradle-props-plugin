@@ -132,7 +132,10 @@ public class PropertiesLoader {
         Properties props = new Properties();
         props.load(Files.newInputStream(path));
 
-        //noinspection unchecked,rawtypes
-        return new HashMap<String, String>((Map) props);
+        // Convert Properties to simple Map<String, String>.
+        // Can be done simply by: return new HashMap<String, String>((Map)props), but it may raise errors.
+        Map<String, String> map = new HashMap<>(props.size());
+        props.forEach((key, value) -> map.put((String) key, (String) value));
+        return map;
     }
 }

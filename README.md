@@ -1,4 +1,4 @@
-Gradle properties plugin
+Gradle properties plugin [![Build status](https://github.com/NocWriter/gradle-props-plugin/actions/workflows/main.yml/badge.svg)](https://github.com/NocWriter/gradle-props-plugin/actions/workflows/main.yml/)  [![2-Clause BSD License](https://img.shields.io/badge/License-BSD-green)](https://opensource.org/licenses/BSD-2-Clause)
 ========================
 
 General
@@ -81,3 +81,4 @@ Take a look at the following example (assuming `default.properties` contains a k
 
 Compatability
 -------------
+Plugin tested with Gradle versions 6.9.2 and 7.4.2 under OpenJDK 11.

@@ -7,10 +7,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
-
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -29,7 +28,7 @@ jobs:
         run: |
           chmod a+x gradlew
           ./gradlew build
-      - name: Run tests (unit and integration)
-        run: |
-          ./gradlew test
-          ./gradlew integrationTest
+      - name: Unit tests
+        run: ./gradlew test
+      - name: Functional tests
+        run: ./gradlew functionalTest

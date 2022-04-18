@@ -8,9 +8,17 @@ package com.nowriter.gradle.props;
  */
 public class MissingPropertiesFileException extends RuntimeException {
 
+    /**
+     * Class constructor.
+     */
     public MissingPropertiesFileException() {
     }
 
+    /**
+     * Class constructor.
+     *
+     * @param message Error message.
+     */
     public MissingPropertiesFileException(String message) {
         super(message);
     }

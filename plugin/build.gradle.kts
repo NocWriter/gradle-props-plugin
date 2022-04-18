@@ -16,6 +16,12 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
+tasks.withType<JavaCompile>{
+    options.compilerArgs.add("-Xlint:unchecked")
+    options.setDeprecation(true)
+}
+
+
 testing {
     suites {
         // Configure the built-in test suite
@@ -45,7 +51,8 @@ testing {
 
 gradlePlugin {
     // Define the plugin
-    plugins.creating {
+    @Suppress("UNUSED_VARIABLE")
+    val propsPlugin by plugins.creating {
         id = "com.nowriter.gradle.props"
         implementationClass = "com.nowriter.gradle.props.GradlePropsPlugin"
     }

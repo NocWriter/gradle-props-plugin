@@ -8,22 +8,29 @@ package com.nowriter.gradle.props;
  */
 public class PropertiesIOException extends RuntimeException {
 
+    /**
+     * Class constructor.
+     */
     public PropertiesIOException() {
     }
 
+    /**
+     * Class constructor.
+     *
+     * @param message Error message.
+     */
     public PropertiesIOException(String message) {
         super(message);
     }
 
+    /**
+     * Class constructor.
+     *
+     * @param message Error message.
+     * @param cause   The cause of this error.
+     */
     public PropertiesIOException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public PropertiesIOException(Throwable cause) {
-        super(cause);
-    }
-
-    public PropertiesIOException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
 }
