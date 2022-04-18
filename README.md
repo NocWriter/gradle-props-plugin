@@ -1,5 +1,9 @@
-Gradle properties plugin [![Build status](https://github.com/NocWriter/gradle-props-plugin/actions/workflows/main.yml/badge.svg)](https://github.com/NocWriter/gradle-props-plugin/actions/workflows/main.yml/)  [![2-Clause BSD License](https://img.shields.io/badge/License-BSD-green)](https://opensource.org/licenses/BSD-2-Clause)
+Gradle properties plugin
 ========================
+
+[![Build status](https://github.com/NocWriter/gradle-props-plugin/actions/workflows/main.yml/badge.svg)](https://github.com/NocWriter/gradle-props-plugin/actions/workflows/main.yml/)
+[![2-Clause BSD License](https://img.shields.io/badge/License-BSD-green?style=flat)](https://opensource.org/licenses/BSD-2-Clause)
+[![Release](https://img.shields.io/github/v/release/NocWriter/gradle-props-plugin?style=flat)](https://github.com/NocWriter/gradle-props-plugin/releases/tag/v1.0)
 
 General
 -------
