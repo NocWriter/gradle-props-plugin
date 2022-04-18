@@ -11,14 +11,17 @@ repositories {
     mavenCentral()
 }
 
+group = "com.nowriter.gradle.props"
+version = "1.0"
+
 java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
 }
 
-tasks.withType<JavaCompile>{
+tasks.withType<JavaCompile> {
     options.compilerArgs.add("-Xlint:unchecked")
-    options.setDeprecation(true)
+    options.isDeprecation = true
 }
 
 
@@ -55,20 +58,23 @@ gradlePlugin {
     val propsPlugin by plugins.creating {
         id = "com.nowriter.gradle.props"
         implementationClass = "com.nowriter.gradle.props.GradlePropsPlugin"
+        displayName = "Gradle properties plugin"
+        description =
+            "A Gradle plugin that loads external properties file into project extra properties and system properties sets."
     }
 }
-
 gradlePlugin.testSourceSets(sourceSets["functionalTest"])
+
+pluginBundle {
+    website = "https://github.com/NocWriter/gradle-props-plugin"
+    vcsUrl = "https://github.com/NocWriter/gradle-props-plugin"
+    tags = listOf("props", "properties")
+}
 
 tasks.named<Task>("check") {
     // Include functionalTest as part of the check lifecycle
     dependsOn(testing.suites.named("functionalTest"))
 }
 
-pluginBundle {
-    website = "https://"
-    vcsUrl = "https://"
-    tags = listOf("gradle", "props", "properties")
-}
 
 
