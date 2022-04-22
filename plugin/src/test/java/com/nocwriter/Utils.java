@@ -1,4 +1,4 @@
-package com.nowriter;
+package com.nocwriter;
 
 import java.net.URL;
 

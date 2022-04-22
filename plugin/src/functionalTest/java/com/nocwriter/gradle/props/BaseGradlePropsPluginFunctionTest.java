@@ -1,4 +1,4 @@
-package com.nowriter.gradle.props;
+package com.nocwriter.gradle.props;
 
 import org.junit.jupiter.api.io.TempDir;
 

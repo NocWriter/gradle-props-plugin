@@ -1,4 +1,4 @@
-package com.nowriter.gradle.props;
+package com.nocwriter.gradle.props;
 
 import org.gradle.api.Project;
 import org.gradle.api.plugins.ExtraPropertiesExtension;

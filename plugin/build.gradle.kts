@@ -11,7 +11,7 @@ repositories {
     mavenCentral()
 }
 
-group = "com.nowriter.gradle.props"
+group = "com.nocwriter.gradle.props"
 version = "1.0"
 
 java {
@@ -56,8 +56,8 @@ gradlePlugin {
     // Define the plugin
     @Suppress("UNUSED_VARIABLE")
     val propsPlugin by plugins.creating {
-        id = "com.nowriter.gradle.props"
-        implementationClass = "com.nowriter.gradle.props.GradlePropsPlugin"
+        id = "com.nocwriter.gradle.props"
+        implementationClass = "com.nocwriter.gradle.props.GradlePropsPlugin"
         displayName = "Gradle properties plugin"
         description =
             "A Gradle plugin that loads external properties file into project extra properties and system properties sets."

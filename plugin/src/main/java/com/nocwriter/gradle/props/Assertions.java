@@ -1,4 +1,4 @@
-package com.nowriter.gradle.props;
+package com.nocwriter.gradle.props;
 
 /**
  * Collection of assertion utilities.

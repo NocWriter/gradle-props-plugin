@@ -1,4 +1,4 @@
-package com.nowriter.gradle.props;
+package com.nocwriter.gradle.props;
 
 /**
  * This exception indicates failure to read a properties file due to I/O error.

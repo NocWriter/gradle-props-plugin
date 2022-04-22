@@ -1,6 +1,6 @@
-package com.nowriter.gradle.props;
+package com.nocwriter.gradle.props;
 
-import com.nowriter.Utils;
+import com.nocwriter.Utils;
 import org.gradle.internal.extensibility.DefaultExtraPropertiesExtension;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

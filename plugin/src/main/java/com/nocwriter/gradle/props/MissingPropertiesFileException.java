@@ -1,4 +1,4 @@
-package com.nowriter.gradle.props;
+package com.nocwriter.gradle.props;
 
 /**
  * This exception indicates that a mandatory/required properties file is missing.
